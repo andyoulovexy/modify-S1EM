@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+
+psql -v --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-EOSQL
+CREATE DATABASE mwdb;
+CREATE USER mwdb WITH PASSWORD '1bb81dbc747eb2be6b2a9e906a1d07694b66';
+GRANT ALL PRIVILEGES ON DATABASE mwdb TO mwdb;
+EOSQL

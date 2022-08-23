@@ -1,0 +1,24 @@
+server.port: 5601
+server.host: "0.0.0.0"
+server.basePath: "/kibana"
+server.rewriteBasePath: true
+elasticsearch.hosts: ["https://es01:9200"]
+elasticsearch.username: elastic
+elasticsearch.password: kr1TLSfOyWIWkj
+xpack.fleet.agents.tlsCheckDisabled: true
+xpack.security.encryptionKey: 'fVqLMpuP6nRq5KAzG3QH33NNBwpdaBDi'
+xpack.reporting.encryptionKey: 'fVqLMpuP6nRq5KAzG3QH33NNBwpdaBDi'
+xpack.encryptedSavedObjects.encryptionKey: 'fVqLMpuP6nRq5KAzG3QH33NNBwpdaBDi'
+data.autocomplete.valueSuggestions.terminateAfter: 10000000
+elasticsearch.ssl.certificateAuthorities: "/usr/share/certificates/ca/ca.crt"
+server.ssl.enabled: true
+server.ssl.certificate: "/usr/share/certificates/kibana/kibana.crt"
+server.ssl.key:  "/usr/share/certificates/kibana/kibana.key"
+telemetry.enabled: false
+newsfeed.enabled: false
+monitoring.kibana.collection.enabled: true
+elasticsearch.requestTimeout: 180000
+elasticsearch.shardTimeout: 180000
+monitoring.ui.enabled: true
+
+
